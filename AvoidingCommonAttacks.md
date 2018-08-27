@@ -13,7 +13,7 @@ code consistency, and regular audits.
 https://openzeppelin.org/api/docs/token_ERC721_ERC721Token.html
 https://openzeppelin.org/api/docs/token_ERC20_StandardToken.html
 
-Here are results of an autid conducted on Zeppelin. Here I am focusing in on the ERC20 Standard Token Platform I used:
+Here are results of an audit conducted on Zeppelin. Here I am focusing in on the ERC20 Standard Token Platform I used:
 
 https://github.com/OpenZeppelin/openzeppelin-solidity/blob/master/audit/ZeppelinAudit.md
 
