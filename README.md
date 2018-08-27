@@ -1,5 +1,5 @@
 
-# ERC20bounty
+# ERC-20 Reward Bounty and ERC-721 Token Mint
 
 ![Screenshot](ERC20pic.jpg)
 
