@@ -1,3 +1,4 @@
+
 # ERC20bounty
 
 ![Screenshot](ERC20pic.jpg)
@@ -45,6 +46,7 @@ npm install babel-polyfill --save-dev
 
 
 truffle test
+</br>
 ![Screenshot](testresults.jpg)
 
 
