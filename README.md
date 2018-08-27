@@ -30,6 +30,17 @@ This project will create an ICO of 100,000 ERC-20 tokens using the EthPm OpenZep
 7. Run test (this will run all of the contract tests)
 8. In a separate bash or powershell terminal, run "npm start" to launch the web server that will run on localhost:3000
 
+## EthPM Packages Used: OpenZeppelin
+openzeppelin-solidity/contracts/token/ERC721/ERC721Token.sol...
+openzeppelin-solidity\contracts\AddressUtils.sol...
+openzeppelin-solidity\contracts\introspection\ERC165.sol...
+openzeppelin-solidity\contracts\introspection\SupportsInterfaceWithLookup.sol...
+openzeppelin-solidity\contracts\math\SafeMath.sol...
+openzeppelin-solidity\contracts\token\ERC721\ERC721.sol...
+openzeppelin-solidity\contracts\token\ERC721\ERC721Basic.sol...
+openzeppelin-solidity\contracts\token\ERC721\ERC721BasicToken.sol...
+openzeppelin-solidity\contracts\token\ERC721\ERC721Receiver.sol...
+
 ## Test Requirements
 
 ### EthHash Test: These tests were created to test the hashing mechanism being tapped from the UI. The test check to see a couple of things:
@@ -49,6 +60,12 @@ This project will create an ICO of 100,000 ERC-20 tokens using the EthPm OpenZep
 5. Ability to return tokens and create new tokens
 
 ![Screenshot](testresults.jpg)
+
+## Design Pattern Requirements
+
+1. Implementation was based around the world class smart contract library, Open Zeppelin. This library infuses industry best practices around common smart contract best practices and functions. These were utilized in the creation of the ERC-20 and ERC-721 token launches by utilizing the Open Zeppelin Token Templates that the methods and test cases pulled from.
+
+2. An emergency stop was also implemented for the sake of best practice: Pausable from Open Zeppelin https://openzeppelin.org/api/docs/lifecycle_Pausable.html
 
 ## Deploying to Ropsten Network
 
