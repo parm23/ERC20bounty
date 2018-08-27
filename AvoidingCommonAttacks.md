@@ -37,8 +37,7 @@ function transferFrom(address _from, address _to, uint256 _value) public returns
   }
 
   /**
-   * @dev Approve the passed address to spend the specified amount of tokens on behalf of msg.sender.
-   *
+   * Approve the passed address to spend the specified amount of tokens on behalf of msg.sender
    * Beware that changing an allowance with this method brings the risk that someone may use both the old
    * and the new allowance by unfortunate transaction ordering. One possible solution to mitigate this
    * race condition is to first reduce the spender's allowance to 0 and set the desired value afterwards:
