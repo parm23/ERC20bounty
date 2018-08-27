@@ -77,8 +77,6 @@ openzeppelin-solidity/contracts/lifecycle/Pausable.sol...
 4. Ability to safely transfer tokens
 5. Ability to return tokens and create new tokens
 
-![Screenshot](testresults.jpg)
-
 ## Design Pattern Requirements
 
 1. Implementation was based around the world class smart contract library, Open Zeppelin. This library infuses industry best practices around common smart contract best practices and functions. These were utilized in the creation of the ERC-20 and ERC-721 token launches by utilizing the Open Zeppelin Token Templates that the methods and test cases pulled from.
