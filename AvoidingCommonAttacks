@@ -1,11 +1,25 @@
 Avoiding Common Attacks
 
-Building Under the Secuity of ERC-20 and ERC-721 Token Standards
+Building Under the Security of ERC-20 and ERC-721 Token Standards
 
-The Zeppelin Token Standads are natively equipped to resist against common attacks. OpenZeppelin is meant to provide secure, tested and community-audited code. The core development principles and strategies that OpenZeppelin is based on include: security in depth, simple and modular code, clarity-driven naming conventions, comprehensive unit testing, pre-and-post-condition sanity checks, code consistency, and regular audits.
+The Zeppelin Token Standads are natively equipped to resist against common attacks. OpenZeppelin is meant to provide secure,
+tested and community-audited code. The core development principles and strategies that OpenZeppelin is based on include: security in depth,
+simple and modular code, clarity-driven naming conventions, comprehensive unit testing, pre-and-post-condition sanity checks, 
+code consistency, and regular audits.
+
 
 https://openzeppelin.org/api/docs/token_ERC721_ERC721Token.html
-https://openzeppelin.org/api/docs/token_ERC20_ERC20.html
+https://openzeppelin.org/api/docs/token_ERC20_StandardToken.html
+
+Here are results of an autid conducted on Zeppelin. Here I am focusing in on the ERC20 Standard Token Platform I used:
+
+https://github.com/OpenZeppelin/openzeppelin-solidity/blob/master/audit/ZeppelinAudit.md
+
+StandardToken
+Implementation of full ERC20 token.
+
+Transfer() and transferFrom() use SafeMath functions, which will cause them to throw instead of returning false. Not a security issue but departs from standard.
+
 
 
 function transferFrom(address _from, address _to, uint256 _value) public returns (bool) {
