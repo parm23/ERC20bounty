@@ -40,6 +40,7 @@ openzeppelin-solidity\contracts\token\ERC721\ERC721.sol...
 openzeppelin-solidity\contracts\token\ERC721\ERC721Basic.sol...
 openzeppelin-solidity\contracts\token\ERC721\ERC721BasicToken.sol...
 openzeppelin-solidity\contracts\token\ERC721\ERC721Receiver.sol...
+openzeppelin-solidity/contracts/lifecycle/Pausable.sol...
 
 ## Test Requirements
 
@@ -66,6 +67,12 @@ openzeppelin-solidity\contracts\token\ERC721\ERC721Receiver.sol...
 1. Implementation was based around the world class smart contract library, Open Zeppelin. This library infuses industry best practices around common smart contract best practices and functions. These were utilized in the creation of the ERC-20 and ERC-721 token launches by utilizing the Open Zeppelin Token Templates that the methods and test cases pulled from.
 
 2. An emergency stop was also implemented for the sake of best practice: Pausable from Open Zeppelin https://openzeppelin.org/api/docs/lifecycle_Pausable.html
+
+[Design Pattern Requirements ]https://github.com/parm23/ERC20bounty/edit/master/DesignPatternRequirements.md
+
+## Avoiding Common Attacks
+
+[Avoiding Common Attacks ]https://github.com/parm23/ERC20bounty/edit/master/README.md
 
 ## Deploying to Ropsten Network
 
