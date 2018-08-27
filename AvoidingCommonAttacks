@@ -2,6 +2,8 @@ Avoiding Common Attacks
 
 Building Under the Security of ERC-20 and ERC-721 Token Standards
 
+![Screenshot](zeppelin.jpg)
+
 The Zeppelin Token Standads are natively equipped to resist against common attacks. OpenZeppelin is meant to provide secure,
 tested and community-audited code. The core development principles and strategies that OpenZeppelin is based on include: security in depth,
 simple and modular code, clarity-driven naming conventions, comprehensive unit testing, pre-and-post-condition sanity checks, 
