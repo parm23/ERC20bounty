@@ -69,7 +69,7 @@ openzeppelin-solidity/contracts/lifecycle/Pausable.sol...
 4. Accounting for various inputs
 5. Checking validity of hash some same input
 
-### ERC-721 Test: These tests were created to tese the following:
+### ERC-721 Test: These tests were created to test the following:
 
 1. Can I deploy and mint a unique ERC721 token?
 2. Ability to uniquely create multiple tokens
@@ -77,7 +77,7 @@ openzeppelin-solidity/contracts/lifecycle/Pausable.sol...
 4. Ability to safely transfer tokens
 5. Ability to return tokens and create new tokens
 
-### ERC-20 Test: These tests were created to tese the following:
+### ERC-20 Test: These tests were created to test the following:
 
 1. Can I lauch an ICO of a reward token?
 2. Ability to uniquely create multiple tokens
