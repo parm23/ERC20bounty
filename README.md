@@ -72,7 +72,7 @@ openzeppelin-solidity/contracts/lifecycle/Pausable.sol...
 
 ## Avoiding Common Attacks
 
-[Avoiding Common Attacks ]https://github.com/parm23/ERC20bounty/edit/master/README.md
+[Avoiding Common Attacks ]https://github.com/parm23/ERC20bounty/edit/master/AvoidingCommonAttacks.md
 
 ## Deploying to Ropsten Network
 
