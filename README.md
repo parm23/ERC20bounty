@@ -21,7 +21,7 @@ This project will create an ICO of 100,000 ERC-20 tokens using the EthPm OpenZep
 
 
 ## Setup Instructions
-1. Clone this repo, then cd into the repo
+1. Clone this repo, then cd into the Fproj folder
 2. Run npm install (this will download dependancies from packages.json). Make sure that you have node, npm, truffle, ganache, and metamask installed
 3. start ganache (or ganache-cli) and make sure it is set to run on port 8545
 4. In a separate bash or powershell terminal, run "truffle console"
