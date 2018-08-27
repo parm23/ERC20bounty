@@ -23,12 +23,27 @@ This project will create an ICO of 100,000 ERC-20 tokens using the EthPm OpenZep
 ## Setup Instructions
 1. Clone this repo, then cd into the Fproj folder
 2. Run npm install (this will download dependancies from packages.json). Make sure that you have node, npm, truffle, ganache, and metamask installed
-3. start ganache (or ganache-cli) and make sure it is set to run on port 8545
+3. start ganache blockchain (or ganache-cli) and make sure it is set to run on port 8545
+
+For Ganache-Cli: ganache-cli -b 3
+
+For Ganache GUI, just change the port to 8545
+
 4. In a separate bash or powershell terminal, run "truffle console"
 5. Run compile
 6. Run migrate (this will deploy the smart contracts to the Ganache or Ropsten testnet)
 7. Run test (this will run all of the contract tests)
 8. In a separate bash or powershell terminal, run "npm start" to launch the web server that will run on localhost:3000
+
+## Adding a Token to Your Metamask Wallet
+
+1. In truffle console, check migrated contracts. Grab the contract address that was created upon deploying the NewContract contract
+2. In the metamask wallet, import the private key of the active account and confirm there is eth.
+3. Click Menu --> Add Token --> Custom Token
+4. Paste the contract address of NewContract (see step 1)
+5. Enter Token Symbol: NT
+6. Enter "2" for decimals of precision
+
 
 ## EthPM Packages Used: OpenZeppelin
 openzeppelin-solidity/contracts/token/ERC721/ERC721Token.sol...
@@ -74,7 +89,7 @@ openzeppelin-solidity/contracts/lifecycle/Pausable.sol...
 
 [Avoiding Common Attacks ]https://github.com/parm23/ERC20bounty/edit/master/AvoidingCommonAttacks.md
 
-## Deploying to Ropsten Network
+
 
 
 
