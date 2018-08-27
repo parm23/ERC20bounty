@@ -77,6 +77,14 @@ openzeppelin-solidity/contracts/lifecycle/Pausable.sol...
 4. Ability to safely transfer tokens
 5. Ability to return tokens and create new tokens
 
+### ERC-20 Test: These tests were created to tese the following:
+
+1. Can I lauch an ICO of a reward token?
+2. Ability to uniquely create multiple tokens
+3. Ability to manage ownership of tokens
+4. Ability to safely transfer tokens
+5. Ability to return tokens and create new tokens
+
 ## Design Pattern Requirements
 
 1. Implementation was based around the world class smart contract library, Open Zeppelin. This library infuses industry best practices around common smart contract best practices and functions. These were utilized in the creation of the ERC-20 and ERC-721 token launches by utilizing the Open Zeppelin Token Templates that the methods and test cases pulled from.
