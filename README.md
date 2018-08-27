@@ -44,6 +44,8 @@ For Ganache GUI, just change the port to 8545
 5. Enter Token Symbol: NT
 6. Enter "2" for decimals of precision
 
+![Screenshot](metamask.png)
+
 
 ## EthPM Packages Used: OpenZeppelin
 openzeppelin-solidity/contracts/token/ERC721/ERC721Token.sol...
