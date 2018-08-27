@@ -45,7 +45,7 @@ npm install babel-polyfill --save-dev
 
 
 truffle test
-
+![Screenshot](testresults.jpg)
 
 
 
