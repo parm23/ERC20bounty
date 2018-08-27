@@ -12,3 +12,7 @@ Implementing the mortal design pattern means including the ability to destroy th
 You can destroy a contract using the selfdestruct keyword. The function to do it is often called kill. It takes one parameter which is the address that will receive all of the funds that the contract currently holds. As an irreversible action, restricting access to this function is important. In this example, only the owner has access to this.
 
 ![Screenshot](Mortal.jpg)
+
+## Justification
+
+Choosing these design patterns made sense in the event that certain token-related issues were to come about. Mortal gives the contract owner the ability to kill the smart contract if something were to go wrong. Circuit Breaker is fantastic if tokens were to get stolen. With Pausable, we are able to freeze the tokens in the contract address of the theif.
