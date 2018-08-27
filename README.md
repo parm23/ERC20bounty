@@ -20,34 +20,41 @@ This project will create an ICO of 100,000 ERC-20 tokens using the EthPm OpenZep
 ![Screenshot](ERC721pic.jpg)
 
 
-Setup the project
-Make sure that you have node, npm and truffle installed
+## Setup Instructions
+1. Clone this repo, then cd into the repo
+2. Run npm install (this will download dependancies from packages.json). Make sure that you have node, npm, truffle, ganache, and metamask installed
+3. start ganache (or ganache-cli) and make sure it is set to run on port 8545
+4. In a separate bash or powershell terminal, run "truffle console"
+5. Run compile
+6. Run migrate (this will deploy the smart contracts to the Ganache or Ropsten testnet)
+7. Run test (this will run all of the contract tests)
+8. In a separate bash or powershell terminal, run "npm start" to launch the web server that will run on localhost:3000
 
+## Test Requirements
 
-Install Ganache and make sure it is running on 8545
+### EthHash Test: These tests were created to test the hashing mechanism being tapped from the UI. The test check to see a couple of things:
 
-Compile and Migrate
+1. Was the input data received by the contract
+2. Has the contract sucessfully hashed the data
+3. Has the contract sucessfully stored the data 
+4. Accounting for various inputs
+5. Checking validity of hash some same input
 
-truffle compile
-truffle migrate
+### ERC-721 Test: These tests were created to tese the following:
 
+1. Can I deploy and mint a unique ERC721 token?
+2. Ability to uniquely create multiple tokens
+3. Ability to manage ownership of tokens
+4. Ability to safely transfer tokens
+5. Ability to return tokens and create new tokens
 
-npm init
-Install zeppelin dependency
-
-npm install zeppelin-solidity
-
-
-npm install chai --save-dev
-npm install chai-as-promised --save-dev
-npm install babel-preset-es2015 --save-dev
-npm install babel-register --save-dev
-npm install babel-polyfill --save-dev
-
-
-truffle test
-</br>
 ![Screenshot](testresults.jpg)
+
+## Deploying to Ropsten Network
+
+
+
+
 
 
 
