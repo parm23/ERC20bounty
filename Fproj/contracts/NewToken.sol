@@ -5,20 +5,51 @@ import "openzeppelin-solidity/contracts/token/ERC20/StandardToken.sol";
 import "openzeppelin-solidity/contracts/lifecycle/Pausable.sol";
 
 //Initializing custom ERC20 token launch parameters
-contract NewToken is StandardToken {
-  string public name = "New";
-  string public symbol = "NT";
-  uint public decimals = 2;
-  uint public INITIAL_SUPPLY = 100000;
-  address owner;
-  function kill() private {
+contract NewToken is StandardToken, Pausable {
+
+    string public name = "New";
+    string public symbol = "NT";
+    uint public decimals = 2;
+    uint public INITIAL_SUPPLY = 100000;
+    address owner;
+    bool public paused = false;
+
+    event Paused();
+    event Unpaused();
+
+//constructor implemented with parameters set above and capturing owner
+    constructor() public {
+        owner = msg.sender;
+        totalSupply_ = INITIAL_SUPPLY;
+        balances[msg.sender] = INITIAL_SUPPLY;
+    }
+    /**
+   * @dev called by the owner to pause, triggers stopped state
+   */
+    modifier whenNotPaused() {
+        require(!paused);
+        _;
+    }
+
+    modifier whenPaused() {
+        require(paused);
+        _;
+    }
+
+    function kill() private whenNotPaused {
         if (msg.sender == owner) selfdestruct(owner);
     }
 
-//constructor implemented with parameters set above and capturing owner
-  constructor() public {
-    owner = msg.sender;
-    totalSupply_ = INITIAL_SUPPLY;
-    balances[msg.sender] = INITIAL_SUPPLY;
-  }
+    function pause() public onlyOwner whenNotPaused {
+        paused = true;
+        emit Paused();
+    }
+
+  /**
+   * @dev called by the owner to unpause, returns to normal state
+   */
+    function unpause() public onlyOwner whenPaused {
+        paused = false;
+        emit Unpaused();
+    }
 }
