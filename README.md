@@ -90,7 +90,9 @@ openzeppelin-solidity/contracts/lifecycle/Pausable.sol...
 
 1. Implementation was based around the world class smart contract library, Open Zeppelin. This library infuses industry best practices around common smart contract best practices and functions. These were utilized in the creation of the ERC-20 and ERC-721 token launches by utilizing the Open Zeppelin Token Templates that the methods and test cases pulled from.
 
-2. An emergency stop was also implemented for the sake of best practice: Pausable from Open Zeppelin https://openzeppelin.org/api/docs/lifecycle_Pausable.html
+2. An emergency freeze was implemented for the sake of token best practice: Pausable from Open Zeppelin https://openzeppelin.org/api/docs/lifecycle_Pausable.html
+
+The dope thing about Pausable is that if there is a breach of either the ERC20 or ERC721 token, an owner can freeze those tokens preventing any future movement of those tokens. That's a pretty nice security feature to have, mitigating the cash out of those tokens to USD.
 
 [Design Pattern Requirements ]https://github.com/parm23/ERC20bounty/edit/master/DesignPatternRequirements.md
 
