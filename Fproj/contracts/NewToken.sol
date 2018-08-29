@@ -18,7 +18,7 @@ contract NewToken is StandardToken, Pausable {
     event Unpaused();
 
 //constructor implemented with parameters set above and capturing owner
-    constructor() public {
+    constructor() public  {
         owner = msg.sender;
         totalSupply_ = INITIAL_SUPPLY;
         balances[msg.sender] = INITIAL_SUPPLY;
@@ -26,20 +26,25 @@ contract NewToken is StandardToken, Pausable {
     /**
    * @dev called by the owner to pause, triggers stopped state
    */
+    
+    //definiing modifiers for requirements for whenNotPaused
     modifier whenNotPaused() {
         require(!paused);
         _;
     }
 
+    //definiing modifiers for requirements for whenPaused
     modifier whenPaused() {
         require(paused);
         _;
     }
 
-    function kill() private whenNotPaused {
+    //kill switch
+    function kill() private {
         if (msg.sender == owner) selfdestruct(owner);
     }
 
+    //defining function to pause contract
     function pause() public onlyOwner whenNotPaused {
         paused = true;
         emit Paused();

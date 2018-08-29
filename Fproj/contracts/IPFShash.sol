@@ -1,8 +1,6 @@
 pragma solidity ^0.4.24;
 
-import "openzeppelin-solidity/contracts/lifecycle/Pausable.sol";
-
-contract IPFShash is Pausable {
+contract IPFShash {
     address owner = msg.sender;
     function kill() private {
         if (msg.sender == owner) selfdestruct(owner);
