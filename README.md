@@ -10,7 +10,8 @@ A Simple ERC-20 Token Transfer Example with Hashing Contract Storage and ERC-721
 
 ERC-20 and ERC-721 tokens both very popular these days among the launches of ICO's and the more recent fascination with marketplaces such as cryptokitties. The ERC-721 standard has gone through a couple iterations and is stabilizing rather quickly, so we are most likely going to see adoption continuing to increase in the present and future. The basic premise of these non-fungible tokens is that each token is unique and therefore cannot be exchanged on a 1:1 basis like an ERC20 token may be. There are many use cases where a unique tangible or digital asset may represented by these ERC-721 tokens and we are really starting to see this pick up for various enterprise blockchain projects
 
-Purpose of this project
+## Purpose of this project
+
 This project will create an ICO of 100,000 ERC-20 tokens using the EthPm OpenZeppelin implementation of the ERC-20 standard that can be freely exchaged from the owner to any peer of his/her coice as a bounty. There are a couple other added features included in this project, the list of actions possible are:
 
 1. ERC-20 token bounty exchange: See web app (localhost:3000) to send tokens and view them in Metamask wallet
