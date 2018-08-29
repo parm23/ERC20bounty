@@ -12,7 +12,7 @@ ERC-20 and ERC-721 tokens both very popular these days among the launches of ICO
 
 ## Purpose of this project
 
-This project will create an ICO of 100,000 ERC-20 tokens using the EthPm OpenZeppelin implementation of the ERC-20 standard that can be freely exchaged from the owner to any peer of his/her coice as a bounty. There are a couple other added features included in this project, the list of actions possible are:
+This project will create an ICO of 100,000 ERC-20 tokens using the EthPm OpenZeppelin implementation of the ERC-20 standard that can be freely exchaged from the owner to any peer of his/her choice as a bounty. There are a couple other added features included in this project, the list of actions possible are:
 
 1. ERC-20 token bounty exchange: See web app (localhost:3000) to send tokens and view them in Metamask wallet
 2. Built-in hashing utilizing smart contract storage of user input, demonstrating the fundamentals of how more complex, larger data elements are often stored/referenced on-chain
