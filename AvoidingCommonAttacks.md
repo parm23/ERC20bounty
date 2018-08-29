@@ -41,3 +41,9 @@ function transferFrom(address _from, address _to, uint256 _value) public returns
    * Beware that changing an allowance with this method brings the risk that someone may use both the old
    * and the new allowance by unfortunate transaction ordering. One possible solution to mitigate this
    * race condition is to first reduce the spender's allowance to 0 and set the desired value afterwards:
+   
+ An emergency freeze was implemented for the sake of token best practice: Pausable from Open Zeppelin https://openzeppelin.org/api/docs/lifecycle_Pausable.html
+
+Functionality: if there is a breach of either the ERC20 or ERC721 token, an owner can freeze those tokens preventing any future movement of those tokens. That's a pretty nice security feature to have, mitigating the cash out of those tokens to USD.
+   
+   
